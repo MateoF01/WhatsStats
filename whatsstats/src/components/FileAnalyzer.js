@@ -1,10 +1,23 @@
 import React from 'react'
+import Button from '@mui/material/Button';
 
-export const FileAnalyzer = (file) => {
+
+export const FileAnalyzer = (myFile) => {
   
-    console.log(file)
+    
+
+    const readFile = (file) => {
+        if (!file){
+            return
+        }
+        console.log("hola")
+    }
 
     return (
-    <div>FileAnalyzer</div>
+    <div>
+        FileAnalyzer
+        <Button onClick={e => readFile(myFile)} variant="contained" component="label"> Console Log </Button>
+
+    </div>
   )
 }

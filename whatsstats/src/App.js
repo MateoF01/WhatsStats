@@ -22,7 +22,6 @@ function App() {
 
         <br></br>
 
-        <Button onClick={e => console.log(file)} variant="contained" component="label"> Console Log </Button>
         <FileAnalyzer file = {file} ></FileAnalyzer>
       </header>
     </div>
